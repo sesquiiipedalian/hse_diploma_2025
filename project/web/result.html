@@ -1,0 +1,22 @@
+"""
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Результаты</title>
+</head>
+<body>
+  <h1>Готовые обои</h1>
+  {% if images %}
+    <ul>
+    {% for img in images %}
+      <li><img src="/{{ img }}" alt="wallpaper" style="max-width:300px;" /></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>Обоев не найдено.</p>
+  {% endif %}
+  <a href="/">Назад</a>
+</body>
+</html>
+"""
